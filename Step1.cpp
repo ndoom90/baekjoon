@@ -2,7 +2,7 @@
 // Created by N on 2021/02/28.
 //
 
-#include "Solution.h"
+#include "Step1.h"
 #include "iostream"
 
 using namespace std;

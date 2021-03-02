@@ -1,12 +1,12 @@
 #include <iostream>
-#include "Solution.cpp"
+#include "Step1.cpp"
+#include "Step2.cpp"
 
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    Solution1 solution = Solution1();
-
-    solution.Remainder();
+    Step2 step2 = Step2();
+    step2.alarmClock();
 }
