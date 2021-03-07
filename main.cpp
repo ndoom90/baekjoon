@@ -1,12 +1,14 @@
 #include <iostream>
-#include "Step1.cpp"
-#include "Step2.cpp"
-#include "Step3.cpp"
+#include "Step1.h"
+#include "Step2.h"
+#include "Step3.h"
+#include "Step4.h"
+#include "Step5.h"
 
 
 using namespace std;
 
 int main() {
-    Step3 step3 = Step3();
-    step3.aPlusB7();
+    Step5 step5 = Step5();
+    step5.minMax();
 }

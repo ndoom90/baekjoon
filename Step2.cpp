@@ -7,104 +7,100 @@
 
 using namespace std;
 
-class Step2 {
-public:
+// 두 수 비교하기
+void Step2::compareTwoNumber() {
+    int a, b;
 
-    // 두 수 비교하기
-    void compareTwoNumber() {
-        int a, b;
+    cin >> a >> b;
 
-        cin >> a >> b;
-
-        if (a > b) {
-            cout << ">";
-        }
-
-        else if (a < b) {
-            cout << "<";
-        }
-
-        else {
-            cout << "==";
-        }
+    if (a > b) {
+        cout << ">";
     }
 
-    // 시험 성적
-    void testScore() {
-        int score;
-
-        cin >> score;
-
-        if (score <= 100 && score >=90) {
-            cout << "A";
-        }
-        else if (score < 90 && score >=80) {
-            cout << "B";
-        }
-        else if (score < 80 && score >= 70) {
-            cout << "C";
-        }
-        else if (score < 70 && score >= 60) {
-            cout << "D";
-        }
-        else {
-            cout << "F";
-        }
+    else if (a < b) {
+        cout << "<";
     }
 
-    // 윤년
-    void leapYear() {
-        int year;
+    else {
+        cout << "==";
+    }
+}
 
-        cin >> year;
+// 시험 성적
+void Step2::testScore() {
+    int score;
 
-        if ((year%4 == 0 && year%100 != 0) || year % 400 == 0) {
-            cout << 1;
-        }
+    cin >> score;
 
-        else {
-            cout << 0;
-        }
+    if (score <= 100 && score >=90) {
+        cout << "A";
+    }
+    else if (score < 90 && score >=80) {
+        cout << "B";
+    }
+    else if (score < 80 && score >= 70) {
+        cout << "C";
+    }
+    else if (score < 70 && score >= 60) {
+        cout << "D";
+    }
+    else {
+        cout << "F";
+    }
+}
+
+// 윤년
+void Step2::leapYear() {
+    int year;
+
+    cin >> year;
+
+    if ((year%4 == 0 && year%100 != 0) || year % 400 == 0) {
+        cout << 1;
     }
 
-    // 사분면 고르기
-    void pickQuadrant() {
-        int x, y;
+    else {
+        cout << 0;
+    }
+}
 
-        cin >> x >> y;
+// 사분면 고르기
+void Step2::pickQuadrant() {
+    int x, y;
 
-        if (x > 0 && y > 0) {
-            cout << 1;
-        }
+    cin >> x >> y;
 
-        else if (x < 0 && y > 0) {
-            cout << 2;
-        }
-
-        else if (x < 0 && y < 0) {
-            cout << 3;
-        }
-
-        else {
-            cout << 4;
-        }
+    if (x > 0 && y > 0) {
+        cout << 1;
     }
 
-    // 알람 시계
-    void alarmClock() {
-        int h, m;
-        cin >> h >> m;
-        m = m - 45;
-        if (m < 0)
-        {
-            m = 60 + m;
-            h = h - 1;
-        }
-
-        if (h < 0) {
-            h = 23;
-        }
-
-        cout << h << m;
+    else if (x < 0 && y > 0) {
+        cout << 2;
     }
-};
+
+    else if (x < 0 && y < 0) {
+        cout << 3;
+    }
+
+    else {
+        cout << 4;
+    }
+}
+
+// 알람 시계
+void Step2::alarmClock() {
+    int h, m;
+    cin >> h >> m;
+    m = m - 45;
+    if (m < 0)
+    {
+        m = 60 + m;
+        h = h - 1;
+    }
+
+    if (h < 0) {
+        h = 23;
+    }
+
+    cout << h << m;
+}
