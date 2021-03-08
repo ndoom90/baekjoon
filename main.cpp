@@ -10,5 +10,5 @@ using namespace std;
 
 int main() {
     Step5 step5 = Step5();
-    step5.minMax();
+    step5.remainder();
 }

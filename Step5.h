@@ -10,6 +10,12 @@ class Step5 {
 
 public:
     void minMax();
+
+    void max();
+
+    void numberCount();
+
+    void remainder();
 };
 
 
