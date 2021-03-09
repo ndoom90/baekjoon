@@ -16,6 +16,12 @@ public:
     void numberCount();
 
     void remainder();
+
+    void average();
+
+    void oxQuiz();
+
+    void overAvg();
 };
 
 

@@ -75,5 +75,80 @@ void Step5::remainder() {
     }
 
     cout << cnt;
+}
+
+// 평균
+void Step5::average() {
+    int n;
+    cin >> n;
+    int score[n];
+
+    int max = -1;
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        cin >> score[i];
+        sum += score[i];
+        if (score[i] > max) max = score[i];
+    }
+
+    float avg = (float)(sum * 100) / (float)(n * max);
+    cout << avg;
+}
+
+// OX 퀴즈
+void Step5::oxQuiz() {
+    int n;
+    cin >> n;
+
+    string strArr[n];
+    for (int i = 0; i < n; i++) {
+        cin >> strArr[i];
+    }
+
+    int score[n];
+    for (int i = 0; i < n; i++) {
+        int temp = 0;
+        score[i] = 0;
+        for (int j = 0; j < strArr[i].length(); j++) {
+            if (strArr[i][j] == 'O') {
+                temp++;
+                score[i] += temp;
+            }
+            else {
+                temp = 0;
+            }
+        }
+        cout << score[i] << endl;
+    }
+}
+
+// 평균은 넘겟지
+void Step5::overAvg() {
+    int n;
+    cin >> n;
+
+    float avg[n];
+
+    for (int i = 0; i < n; i++) {
+        int m;
+        cin >> m;
+        int nums[m];
+        int temp;
+        int sum = 0;
+        for (int j = 0; j < m; j++) {
+            cin >> nums[j];
+            sum += nums[j];
+        }
+        avg[i] = (float)sum / (float)m;
+
+        int cnt = 0;
+        for (int j = 0; j < m; j++) {
+            if (avg[i] < nums[j]) {
+                cnt++;
+            }
+        }
+        float result = (float)cnt * 100 / (float)m;
+        printf("%.3f%%\n", result);
+    }
 
 }
