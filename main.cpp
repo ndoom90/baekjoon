@@ -5,13 +5,12 @@
 #include "Step4.h"
 #include "Step5.h"
 #include "Step6.h"
-
+#include "Step7.h"
 
 using namespace std;
 
 int main() {
-    Step6 step6 = Step6();
+    Step7 step7 = Step7();
 
-    vector<int> a = {1, 2, 3, 5, 20};
-    step6.hanNumber();
+    step7.wordStudy();
 }
