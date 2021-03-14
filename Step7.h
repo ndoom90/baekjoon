@@ -16,11 +16,19 @@ public:
 
     void findAlphabet();
 
-    void test();
-
     void repeatCharArr();
 
     void wordStudy();
+
+    void nWords();
+
+    void sangSoo();
+
+    void dial();
+
+    void croatiaAlphabet();
+
+    void checkWordGroup();
 };
 
 

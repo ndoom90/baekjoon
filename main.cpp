@@ -6,11 +6,13 @@
 #include "Step5.h"
 #include "Step6.h"
 #include "Step7.h"
+#include "Step8.h"
 
 using namespace std;
 
 int main() {
     Step7 step7 = Step7();
+    Step8 step8 = Step8();
 
-    step7.wordStudy();
+    step7.checkWordGroup();
 }
