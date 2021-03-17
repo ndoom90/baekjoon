@@ -14,5 +14,5 @@ int main() {
     Step7 step7 = Step7();
     Step8 step8 = Step8();
 
-    step7.checkWordGroup();
+    step8.acmHotel();
 }

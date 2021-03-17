@@ -11,6 +11,16 @@ class Step8 {
 public:
 
     void Bep();
+
+    void honeyComb();
+
+    void findFraction();
+
+    void snail();
+
+    void acmHotel();
+
+    void womanChairman();
 };
 
 
