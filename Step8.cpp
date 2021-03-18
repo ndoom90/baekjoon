@@ -94,6 +94,14 @@ void Step8::acmHotel() {
 }
 
 // 부녀회장이 될테야
+int sumArr(int arr[][14], int k, int n) {
+    int sum = 0;
+    for (int i = 0; i <= n; i++) {
+        sum += arr[k - 1][i];
+    }
+    return sum;
+}
+
 void Step8::womanChairman() {
     int t, k, n;
 
@@ -101,6 +109,17 @@ void Step8::womanChairman() {
 
     for (int i = 0; i < t; i++) {
         cin >> k >> n;
+        int arr[15][14];
+        for (int j = 0; j <= k; j++) {
+            for (int m = 0; m < n; m++) {
+                if (j == 0) arr[j][m] = m + 1;
+                else {
+                    arr[j][m] = sumArr(arr, j, m);
+                }
+            }
+        }
 
+        cout << arr[k][n - 1] << endl;
     }
+
 }
