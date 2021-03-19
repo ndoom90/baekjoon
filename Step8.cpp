@@ -169,7 +169,7 @@ void Step8::plusBigNumbers() {
     int aIndex = a.size();
     int bIndex = b.size();
     int resultIndex = a.size() >= b.size() ? a.size() : b.size();
-    int smallIndex = a.size() >= b.size() ? b.size() : a.size();
+    int bigIndex = a.size() >= b.size() ? a.size() : b.size();
     char result[resultIndex];
     while (aIndex != 0 && bIndex != 0) {
         if (temp != 0) {
@@ -193,12 +193,17 @@ void Step8::plusBigNumbers() {
     if (aIndex == 0) calLeftNumbers(b, result, bIndex, resultIndex, temp);
     else calLeftNumbers(a, result, aIndex, resultIndex, temp);
 
-    string resultStr = result;
+
     if (temp != 0) {
-        cout << '1' + resultStr;
+        cout << 1;
+        for (int i = 0; i < bigIndex; i++) {
+            cout << result[i];
+        }
     }
     else {
-        cout << resultStr;
+        for (int i = 0; i < bigIndex; i++) {
+            cout << result[i];
+        }
     }
 }
-
+// 9999999999123929019999999 918301923891993912939
