@@ -21,6 +21,10 @@ public:
     void acmHotel();
 
     void womanChairman();
+
+    void sugarDelivery();
+
+    void plusBigNumbers();
 };
 
 

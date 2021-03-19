@@ -121,5 +121,84 @@ void Step8::womanChairman() {
 
         cout << arr[k][n - 1] << endl;
     }
-
 }
+
+// 설탕 배달
+void Step8::sugarDelivery() {
+    int n;
+    cin >> n;
+
+    for (int i = n / 5; i >= 0; i--) {
+        if (n % 5 == 0) {
+            cout << i;
+            return;
+        }
+        for (int j = (n - i * 5) / 3; j <= n / 3; j++){
+            if (i * 5 + j * 3 == n) {
+                cout << i + j;
+                return;
+            }
+        }
+    }
+    cout << -1;
+    return;
+}
+
+// 큰수 A + B
+void calLeftNumbers(string str, char result[], int &index, int &resultIndex, int &temp) {
+    while (index != 0) {
+        if (temp != 0) {
+            int sum = str[--index] - '0' + temp;
+            temp--;
+            if (sum > 9) {
+                temp++;
+                result[--resultIndex] = sum + '0' - 10;
+            }
+            else result[--resultIndex] = sum + '0';
+        }
+        else {
+            result[--resultIndex] = str[--index];
+        }
+    }
+}
+void Step8::plusBigNumbers() {
+    string a, b;
+    cin >> a >> b;
+
+    int temp = 0;
+    int aIndex = a.size();
+    int bIndex = b.size();
+    int resultIndex = a.size() >= b.size() ? a.size() : b.size();
+    int smallIndex = a.size() >= b.size() ? b.size() : a.size();
+    char result[resultIndex];
+    while (aIndex != 0 && bIndex != 0) {
+        if (temp != 0) {
+            int sum = a[--aIndex] + b[--bIndex] - '0' * 2 + temp;
+            temp--;
+            if (sum > 9) {
+                temp++;
+                result[--resultIndex] = sum + '0' - 10;
+            }
+            else result[--resultIndex] = sum + '0';
+        }
+        else {
+            int sum = a[--aIndex] + b[--bIndex] - '0' * 2;
+            if (sum > 9) {
+                temp++;
+                result[--resultIndex] = sum + '0' - 10;
+            }
+            else result[--resultIndex] = sum + '0';
+        }
+    }
+    if (aIndex == 0) calLeftNumbers(b, result, bIndex, resultIndex, temp);
+    else calLeftNumbers(a, result, aIndex, resultIndex, temp);
+
+    string resultStr = result;
+    if (temp != 0) {
+        cout << '1' + resultStr;
+    }
+    else {
+        cout << resultStr;
+    }
+}
+
