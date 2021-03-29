@@ -25,6 +25,8 @@ public:
     void sugarDelivery();
 
     void plusBigNumbers();
+
+    void teleport();
 };
 
 

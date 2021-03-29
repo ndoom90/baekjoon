@@ -206,4 +206,28 @@ void Step8::plusBigNumbers() {
         }
     }
 }
-// 9999999999123929019999999 918301923891993912939
+
+// Fly me to the Alpha Centauri
+void Step8::teleport() {
+    int t, x, y;
+    cin >> t;
+    int distance;
+    for (int i = 0; i < t; i++) {
+        cin >> x >> y;
+
+        int n;
+        if ((y - x) % 2 != 0) {
+            // Find n2 = y - x
+            for (int i = 0;; i++) {
+                if (n = sqrt(y - x)) {
+                    cout << n << endl;
+                    return;
+                }
+            }
+        }
+
+        else {
+            // Find n2 = y - x or n2 + n = y - x
+        }
+    }
+}

@@ -7,12 +7,14 @@
 #include "Step6.h"
 #include "Step7.h"
 #include "Step8.h"
+#include "Step9.h"
 
 using namespace std;
 
 int main() {
     Step7 step7 = Step7();
     Step8 step8 = Step8();
+    Step9 step9 = Step9();
 
-    step8.plusBigNumbers();
+    step9.countPrimeNumber();
 }
