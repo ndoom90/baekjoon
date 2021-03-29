@@ -14,7 +14,7 @@ bool isPrimeNumber(int n) {
     }
     return true;
 }
-void Step9::countPrimeNumber() {
+void Step9::countPrimeNumbers() {
     int t, n;
 
     cin >> t;

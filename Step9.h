@@ -10,7 +10,7 @@ class Step9 {
 public:
 
 
-    void countPrimeNumber();
+    void countPrimeNumbers();
 };
 
 
