@@ -15,6 +15,8 @@ public:
     void findMinAndSum();
 
     void factorization();
+
+    void gitTest();
 };
 
 

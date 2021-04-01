@@ -62,4 +62,8 @@ void Step9::factorization() {
     }
 }
 
+// git terminal diff test
+void Step9::gitTest() {
+    cout << "Hello Git";
+}
 
