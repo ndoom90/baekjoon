@@ -16,5 +16,5 @@ int main() {
     Step8 step8 = Step8();
     Step9 step9 = Step9();
 
-    step9.countPrimeNumbers();
+    step9.factorization();
 }

@@ -11,6 +11,10 @@ public:
 
 
     void countPrimeNumbers();
+
+    void findMinAndSum();
+
+    void factorization();
 };
 
 
