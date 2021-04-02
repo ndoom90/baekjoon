@@ -19,7 +19,7 @@ void Step4::aPlusB5() {
             break;
         }
         else {
-            cout << a + b << endl;
+            cout << a + b << '\n';
         }
     }
 }
@@ -38,7 +38,7 @@ void Step4::aPlusB5() {
 //    }
 //
 //    for (int i = 0; i < cnt; i++) {
-//        cout << aVector[i] + bVector[i] << endl;
+//        cout << aVector[i] + bVector[i] << '\n';
 //    }
 //}
 

@@ -118,7 +118,7 @@ void Step5::oxQuiz() {
                 temp = 0;
             }
         }
-        cout << score[i] << endl;
+        cout << score[i] << '\n';
     }
 }
 

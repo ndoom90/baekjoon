@@ -17,6 +17,8 @@ public:
     void factorization();
 
     void gitTest();
+
+    void findPrimeNumber();
 };
 
 

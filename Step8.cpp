@@ -85,10 +85,10 @@ void Step8::acmHotel() {
         cin >> h >> w >> n;
 
         if (n % h != 0) {
-            cout << (100 * (n % h)) + (n / h + 1) << endl;
+            cout << (100 * (n % h)) + (n / h + 1) << '\n';
         }
         else {
-            cout << 100 * h + (n / h) << endl;
+            cout << 100 * h + (n / h) << '\n';
         }
     }
 }
@@ -119,7 +119,7 @@ void Step8::womanChairman() {
             }
         }
 
-        cout << arr[k][n - 1] << endl;
+        cout << arr[k][n - 1] << '\n';
     }
 }
 
@@ -220,7 +220,7 @@ void Step8::teleport() {
             // Find n2 = y - x
             for (int i = 0;; i++) {
                 if (n = sqrt(y - x)) {
-                    cout << n << endl;
+                    cout << n << '\n';
                     return;
                 }
             }

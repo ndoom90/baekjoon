@@ -15,6 +15,7 @@ bool isPrimeNumber(int n) {
     }
     return true;
 }
+
 void Step9::countPrimeNumbers() {
     int t, n;
 
@@ -43,7 +44,7 @@ void Step9::findMinAndSum() {
         }
     }
 
-    if (sum != 0) cout << sum << endl << min;
+    if (sum != 0) cout << sum << '\n' << min;
     else cout << -1;
 }
 
@@ -55,15 +56,21 @@ void Step9::factorization() {
         for (int i = 2; i <= n; i++) {
             if (n % i == 0) {
                 n /= i;
-                cout << i << endl;
+                cout << i << '\n';
                 break;
             }
         }
     }
 }
 
-// git terminal diff test
-void Step9::gitTest() {
-    cout << "Hello Git";
+// 소수 구하기
+void Step9::findPrimeNumber() {
+    int m, n;
+    cin >> m >> n;
+
+    for (int i = m; i <= n ; i++) {
+        if (isPrimeNumber(i)) cout << i << '\n';
+    }
 }
+
 

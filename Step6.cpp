@@ -50,7 +50,7 @@ void Step6::selfNumber() {
 
     for (int i = 0; i < SIZE; i++) {
         if (arr[i] == false) {
-            cout << i + 1 << endl;
+            cout << i + 1 << '\n';
         }
      }
 }

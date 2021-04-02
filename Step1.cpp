@@ -15,25 +15,25 @@ void Step1::HelloWorld() {
 
 // We love kriii
 void Step1::WeLoveCriii() {
-    cout << "강한친구 대한육군" << endl << "강한친구 대한육군";
+    cout << "강한친구 대한육군" << '\n' << "강한친구 대한육군";
 }
 
 
 // 고양이
 void Step1::Cat() {
-    cout << "\\    /\\" << endl
-         << " )  ( \')" << endl
-         << "(  /  )" << endl
-         << " \\(__)|" << endl;
+    cout << "\\    /\\" << '\n'
+         << " )  ( \')" << '\n'
+         << "(  /  )" << '\n'
+         << " \\(__)|" << '\n';
 }
 
 // 개
 void Step1::Dog() {
-    cout    << "|\\_/|" << endl
-            << "|q p|   /}" << endl
-            << "( 0 )\"\"\"\\" << endl
-            << "|\"^\"`    |" << endl
-            << "||_/=\\\\__|" << endl;
+    cout    << "|\\_/|" << '\n'
+            << "|q p|   /}" << '\n'
+            << "( 0 )\"\"\"\\" << '\n'
+            << "|\"^\"`    |" << '\n'
+            << "||_/=\\\\__|" << '\n';
 }
 
 // A + B
@@ -70,20 +70,20 @@ void Step1::FourRulesCalculations() {
     int a, b;
 
     cin >> a >> b;
-    cout << a + b << endl
-            << a - b << endl
-            << a * b << endl
-            << a / b << endl
-            << a % b << endl;
+    cout << a + b << '\n'
+            << a - b << '\n'
+            << a * b << '\n'
+            << a / b << '\n'
+            << a % b << '\n';
 }
 
 // 나머지
 void Step1::Remainder() {
     int a, b, c;
     cin >> a >> b >> c;
-    cout << (a + b) % c << endl
-         << ((a % c) + (b % c)) % c << endl
-         << (a * b) % c << endl
+    cout << (a + b) % c << '\n'
+         << ((a % c) + (b % c)) % c << '\n'
+         << (a * b) % c << '\n'
          << ((a % c) * (b % c)) % c;
 }
 
@@ -96,17 +96,17 @@ void Step1::Multiplication() {
 
     calResult = a * (b % 10);
     sum += calResult;
-    cout << calResult << endl;
+    cout << calResult << '\n';
     b /= 10;
 
     calResult = a * (b % 10);
     sum += calResult * 10;
-    cout << calResult << endl;
+    cout << calResult << '\n';
     b /= 10;
 
     calResult = a * (b % 10);
     sum += calResult * 100;
-    cout << a * (b % 10) << endl << sum;
+    cout << a * (b % 10) << '\n' << sum;
 }
 
 
